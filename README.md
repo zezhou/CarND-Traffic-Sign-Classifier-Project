@@ -1,6 +1,5 @@
-#**Traffic Sign Recognition** 
-
----
+Traffic Sign Recognition
+===========================
 
 **Build a Traffic Sign Recognition Project**
 
@@ -225,5 +224,5 @@ Let's have a look conv layer2 for each of two examples(First image is success to
 
 ![wrong][wrong]
 
-In case of the success predicting image, the feature map activations clearly show the outline of the sign while in case of the fail predicting image the feature maps contain mostly noise, i. e., the CNN finds no useful information in this image. 
+In case of the success predicting image, the feature map activations clearly show the outline of the sign while in case of the fail predicting image the feature maps contain mostly noise. The CNN finds no useful information in this image. 
 This demonstrates that the CNN learned to detect useful sign features on its own,
