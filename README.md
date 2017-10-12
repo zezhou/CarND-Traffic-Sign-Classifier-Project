@@ -147,15 +147,15 @@ With extra validating dataset, My final model results were:
 * training set accuracy of 0.997
 * test set accuracy of `0.943`
 
-* What was the first architecture that was tried and why was it chosen?
+#### What was the first architecture that was tried and why was it chosen?
 
 I first use LeNet5 to build the model and get accuracy 0.997 in train set, accuracy 0.765 in validate set, and 0.758 in test set.
 
-* What were some problems with the initial architecture?
+#### What were some problems with the initial architecture?
 
 The problems of the initial architecture is it is overfiting in the early stage. When the accuracy reach 0.997 in the train set, it is only 0.765 in the validate set and 0.758 in the test set. This means it can't continue improve accuracy in test set in future training.
 
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+#### How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
 I use Following steps to improve accuracy:
   * Some preparing techniques like grayscale, normalize and data augumenting. After these preprocess the accuracy of validate set be improved to 0.95 and accuracy of test set improve to 0.923.  
@@ -163,7 +163,7 @@ I use Following steps to improve accuracy:
   * Tune training paramaters like epochs, learning rate, batch size and dropout rate. This step increase 0.01 accuracy in test set.
   * Finally, I add validate data into training set and get the accuracy of 0.943 in test set.
 
-* Which parameters were tuned? How were they adjusted and why?
+#### Which parameters were tuned? How were they adjusted and why?
 
 I tuned following parameters:
   * batch size: from 128 to 64. The smaller batch size, the higher accuracy in test set.
@@ -171,7 +171,7 @@ I tuned following parameters:
   * epochs: 60. I tried a lot of epochs and found 60  have good performance.
   * train + valid set training epochs: 30
 
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+#### What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
 I think convolution layer is the key to this task. With convolution layer, the model can automatic learn the parterns of traffic sign.
 The dropout layer and merger layer are ticky but effective techniques. The dropout decrease the overfit of model, and the merger layer helps to gradients propagation.
