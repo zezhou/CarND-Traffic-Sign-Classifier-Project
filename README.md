@@ -141,11 +141,11 @@ After validate the architecture, I add validate dataset into training dataset to
 My final model results were:
 * training set accuracy of 0.991
 * validation set accuracy of 0.960
-* test set accuracy of 0.935
+* test set accuracy of `0.935`
 
 With extra validating dataset, My final model results were:
 * training set accuracy of 0.997
-* test set accuracy of 0.943
+* test set accuracy of `0.943`
 
 * What was the first architecture that was tried and why was it chosen?
 
